@@ -1,18 +1,15 @@
 :root{
-  --pink: #A52A2A/*D2738A*/;
+  --pink:#D2738A;
 }
 
 body{
   color: rgb(153, 153, 153);
   font-family: monospace;
   font-size: 14pt;
-  background: url(lain.png) no-repeat center center fixed;
-  background-size: cover;
-  /*
-  background: url(lain.png) no-repeat fixed;
-  background-size: cover;
-  background-position: right bottom;
-   */
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  overflow: hidden;
 }
 
 a:link, a:visited, a:hover, a:active{
@@ -29,7 +26,6 @@ a:link, a:visited, a:hover, a:active{
   position: fixed;
   top: 94%; left: 92%; right: 0; bottom: 0;
   margin: auto;
-  /*outline: var(--pink) solid 1px;*/
   display: table;
 }
 
@@ -39,7 +35,6 @@ a:link, a:visited, a:hover, a:active{
   position: fixed;
   top: 35%; left: 0; right: 0; bottom: 0;
   margin: left;
-  /*outline: var(--pink) solid 1px;*/
   display: table;
   z-index: 1;
 }
@@ -72,4 +67,12 @@ input{
   color: rgb(193, 180, 146);
   outline: none;
   border: none;
+}
+
+*{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+canvas{
+  background-color: #000;
 }
