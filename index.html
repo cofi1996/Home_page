@@ -9,8 +9,8 @@
   </head>
 
   <body onload="init();">
+    
     <div class="mainbox">
-
       <span>music >> </span>
       [
       <a href="https://www.youtube.com/?hl=sr&gl=RS">Youtube</a>
@@ -74,6 +74,7 @@
       ]
 
     </div>
+    <canvas id="nokey" width="800" height="800">
     <p id="time">unknow</p>
     <div id="searchlist">
     </div>
@@ -81,7 +82,9 @@
       <label style="color: rgb(210, 115, 138)">>></label>
       <input id="q" value="" onfocus="this.value=this.value" onkeypress="javascript:handleQuery(event,this.value);" type="text" autofocus>
     </div>
-
+    <script type="text/javascript" src="index.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    </canvas>
   </body>
 
 </html>
