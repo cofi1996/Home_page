@@ -34,14 +34,14 @@ const updateClock = () => {
   const currentTime = new Date()
   const hours = currentTime.getHours()
   const minutes = currentTime.getMinutes()
-  const seconds = currentTime.getSeconds()
+  // const seconds = currentTime.getSeconds()
   if (minutes < 1){
     minutes = "0" + minutes
   }
-  if (seconds < 1){
-    seconds = "0" + seconds
-  }
-  let t_str = hours + ":" + minutes + ":" + seconds + " ";
+  // if (seconds < 1){
+  //   seconds = "0" + seconds
+  // }
+  let t_str = hours + ":" + minutes + " ";
 
   $('time').innerHTML = t_str;
 }
